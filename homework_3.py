@@ -1,5 +1,6 @@
 import random
 from datetime import datetime
+from pprint import pprint
 
 names = ["Jozef", "Peter", "Martin", "Marek", "Michal",
     "Pavel", "Jan", "Lukáš", "Roman", "Tomáš",
@@ -69,7 +70,7 @@ def main(dtoIn):
     return employees
 
 dtoIn = {
-  'count': 5,
+  'count': 2,
   'age': {
     'min': 19,
     'max': 35
@@ -79,4 +80,4 @@ dtoIn = {
 dtoOut = main(dtoIn)
 
 for employee in dtoOut:
-    print(employee)
+    pprint(employee)
